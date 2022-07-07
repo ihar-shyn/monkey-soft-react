@@ -119,7 +119,7 @@ const DepartmentList = (props) => {
                     const rowIdx = props.row.id;
                     return (
                         <div>
-                            <a href={"/department-edit/" + props.row.original.id}>Edit</a>
+                            <a href={"/department/" + props.row.original.id}>Edit</a>
                             &nbsp;
                             <a href={"#"} onClick={() => deleteDepartment(rowIdx)}>Delete</a>
                         </div>
@@ -243,7 +243,7 @@ const DepartmentList = (props) => {
             </div>
 
             <div style={{ paddingTop: '30px', textAlign: 'left' }}>
-                <a className="btn btn-dark" href="/department-create">Establish new department</a>
+                <a className="btn btn-dark" href="/department">Establish new department</a>
             </div>
         </div>
     )

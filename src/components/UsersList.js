@@ -155,7 +155,7 @@ const UsersList = (props) => {
                     const rowIdx = props.row.id;
                     return (
                         <div>
-            <a href={"/user-edit/" + props.row.original.id}>Edit</a>
+            <a href={"/user/" + props.row.original.id}>Edit</a>
                             &nbsp;
             <a href={"#"} onClick={() => deleteUser(rowIdx)}>Delete</a>
                         </div>
@@ -298,7 +298,7 @@ const UsersList = (props) => {
             </div>
 
             <div style={{ paddingTop: '30px', textAlign: 'left' }}>
-                <a className="btn btn-dark" href="/user-create">Hire new monkey</a>
+                <a className="btn btn-dark" href="/user">Hire new monkey</a>
             </div>
         </div>
     );
